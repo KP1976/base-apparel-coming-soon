@@ -1,0 +1,45 @@
+.email-form {
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__input {
+    border: 2px solid $color-primary-desaturated-red-30;
+    border-radius: 8rem;
+    color: $color-neutral-dark-grayish-red;
+    font-size: $font-size-16;
+    font-weight: $font-weight-semibold;
+    height: 3rem;
+    letter-spacing: $letter-spacing--0_1;
+    line-height: $line-height-100;
+    padding-inline: $space-24;
+    width: 100%;
+
+    &::placeholder {
+      color: $color-primary-desaturated-red-50;
+      font-size: $font-size-14;
+    }
+  }
+
+  &__button {
+    align-items: center;
+    background: $gradient;
+    border-radius: 8rem;
+    box-shadow: 0 12px 12px $color-primary-desaturated-red-30;
+    display: flex;
+    font-size: $font-size-16;
+    font-weight: $font-weight-semibold;
+    height: 3rem;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    width: 4rem;
+  }
+
+  &__button-icon {
+    height: 20px;
+    width: 12px;
+  }
+}

@@ -3,6 +3,10 @@
     @include flex-column($space-32);
   }
 
+  &__text {
+    @include flex-column($space-16);
+  }
+
   &__title {
     color: $color-neutral-dark-grayish-red;
     font-size: $font-size-40;
@@ -26,3 +30,5 @@
     text-align: center;
   }
 }
+
+@import "../components/form";
