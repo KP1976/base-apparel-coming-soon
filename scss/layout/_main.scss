@@ -2,4 +2,19 @@
   &__content {
     @include flex-column($space-32);
   }
+
+  &__title {
+    color: $color-neutral-dark-grayish-red;
+    font-size: $font-size-40;
+    font-weight: $font-weight-semibold;
+    letter-spacing: $letter-spacing--10;
+    line-height: $line-height-105;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__title-highlight {
+    color: $color-primary-desaturated-red;
+    font-weight: $font-weight-light;
+  }
 }
