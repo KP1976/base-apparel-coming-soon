@@ -206,3 +206,10 @@ body {
   color: hsl(0, 36%, 70%);
   font-weight: 300;
 }
+.coming-soon__description {
+  color: hsla(0, 36%, 70%, 0.5);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.55;
+  text-align: center;
+}

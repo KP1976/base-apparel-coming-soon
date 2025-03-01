@@ -17,4 +17,12 @@
     color: $color-primary-desaturated-red;
     font-weight: $font-weight-light;
   }
+
+  &__description {
+    color: $color-primary-desaturated-red-50;
+    font-size: $font-size-14;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-155;
+    text-align: center;
+  }
 }
