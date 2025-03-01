@@ -141,6 +141,28 @@ display:revert; revert to element instead of attribute */
   font-weight: 600;
   src: url("assets/fonts/josefin-sans-v32-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+html,
 body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   font-family: "Josefin Sans", sans-serif;
+  min-height: 100dvh;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  flex: 1 1 auto;
+  min-height: 100%;
+  padding: 2rem;
 }

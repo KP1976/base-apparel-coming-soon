@@ -10,11 +10,33 @@ $white: hsl(0, 0%, 100%);
 $gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 
 // Typography
-$font-size-base: 16px;
-$font-family: "Josefin Sans", sans-serif;
+$font-name: "Josefin Sans", sans-serif;
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-semibold: 600;
+
+$font-size-62: 3.875rem;
+$font-size-40: 2.5rem;
+$font-size-16: 1rem;
+$font-size-14: 0.875rem;
+
+$line-height-112: 1.12;
+$line-height-105: 1.05;
+$line-height-100: 1;
+
+$letter-spacing--19: 19px;
+$letter-spacing--10: 10px;
+$letter-spacing--0_1: -0.1px;
+
+// SPACING
+$space-164: 10.25rem;
+$space-132: 8.25rem;
+$space-64: 4rem;
+$space-40: 2.5rem;
+$space-32: 2rem;
+$space-24: 1.5rem;
+$space-20: 1.25rem;
+$space-16: 1rem;
 
 // Breakpoints
 $breakpoint-mobile: 375px;

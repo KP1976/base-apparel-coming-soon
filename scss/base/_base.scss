@@ -1,3 +1,29 @@
+html,
 body {
-  font-family: $font-family;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  align-items: center;
+  // background-color: $light-grayish-blue;
+  @include flex-column();
+  font-family: $font-name;
+  min-height: 100dvh;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.coming-soon {
+  // align-items: center;
+  @include flex-column($space-64);
+  flex: 1 1 auto;
+  // justify-content: center;
+  // max-width: 72.5rem;
+  min-height: 100%;
+  padding: $space-32;
+
+  // @include respond-to($breakpoint-tablet-big) {
+  //   padding: $space-24;
+  // }
 }
