@@ -166,3 +166,30 @@ body {
   min-height: 100%;
   padding: 2rem;
 }
+
+.coming-soon__header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.coming-soon__logo {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 6.25rem;
+}
+.coming-soon__hero {
+  width: 100vw; /* Full viewport width */
+  margin-left: calc(-50vw + 50%); /* Center the image */
+}
+.coming-soon__hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.coming-soon__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

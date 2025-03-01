@@ -1,0 +1,22 @@
+.coming-soon {
+  &__header {
+    @include flex-column($space-32);
+  }
+
+  &__logo {
+    display: block;
+    object-fit: cover;
+    width: 6.25rem;
+  }
+
+  &__hero {
+    width: 100vw; /* Full viewport width */
+    margin-left: calc(-50vw + 50%); /* Center the image */
+  }
+
+  &__hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
