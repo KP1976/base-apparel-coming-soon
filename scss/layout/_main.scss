@@ -1,6 +1,11 @@
 .coming-soon {
   &__content {
     @include flex-column($space-32);
+
+    @include respond-to($breakpoint-desktop) {
+      grid-column: 1 / 2;
+      grid-row: 1 /1;
+    }
   }
 
   &__text {

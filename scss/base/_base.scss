@@ -15,15 +15,18 @@ body {
 }
 
 .coming-soon {
-  // align-items: center;
   @include flex-column($space-64);
   flex: 1 1 auto;
-  // justify-content: center;
-  // max-width: 72.5rem;
   min-height: 100%;
   padding: $space-32;
 
-  // @include respond-to($breakpoint-tablet-big) {
-  //   padding: $space-24;
-  // }
+  @include respond-to($breakpoint-desktop) {
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 0;
+    max-width: 90rem;
+    padding: 0;
+  }
 }

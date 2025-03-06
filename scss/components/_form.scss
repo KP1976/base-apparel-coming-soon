@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+
+    @include respond-to($breakpoint-desktop) {
+      flex-direction: row;
+    }
   }
 
   &__input {
