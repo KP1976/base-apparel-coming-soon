@@ -161,20 +161,22 @@ body {
 .coming-soon {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 0;
   flex: 1 1 auto;
   min-height: 100%;
-  padding: 2rem;
+  padding-top: 2rem;
+  position: relative;
 }
 @media (min-width: 768px) {
   .coming-soon {
     align-items: center;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 0;
     max-width: 90rem;
-    padding: 0;
+    padding-top: 0;
+    padding-left: 4rem;
   }
 }
 
@@ -234,29 +236,19 @@ body {
 }
 @media (min-width: 768px) {
   .coming-soon__header {
-    grid-column: 2/3;
-    position: relative;
-  }
-}
-.coming-soon__logo {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 6.25rem;
-}
-@media (min-width: 768px) {
-  .coming-soon__logo {
-    position: absolute;
+    display: block;
   }
 }
 .coming-soon__hero {
-  width: 100vw; /* Full viewport width */
-  margin-left: calc(-50vw + 50%); /* Center the image */
+  width: 100%;
+  height: auto;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .coming-soon__hero {
-    width: auto;
-    margin-left: 0;
+    width: 50%;
+    height: auto;
+    margin: 0;
   }
 }
 .coming-soon__hero-img {
@@ -265,10 +257,32 @@ body {
   display: block;
 }
 
+.coming-soon__logo {
+  display: block;
+  margin-left: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 6.25rem;
+}
+@media (min-width: 768px) {
+  .coming-soon__logo {
+    left: 4rem;
+    position: absolute;
+    top: 4rem;
+    width: 9.875rem;
+  }
+}
+.coming-soon__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-top: 2rem;
+}
 .coming-soon__content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 0 2rem;
 }
 @media (min-width: 768px) {
   .coming-soon__content {
@@ -289,6 +303,15 @@ body {
   line-height: 1.05;
   text-align: center;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .coming-soon__title {
+    font-size: 3.875rem;
+    grid-column: 1/2;
+    grid-row: 1/1;
+    letter-spacing: 19px;
+    line-height: 1.12;
+  }
 }
 .coming-soon__title-highlight {
   color: hsl(0, 36%, 70%);
@@ -352,7 +375,7 @@ body {
 }
 
 .footer__attribution {
-  color: hsl(0, 36%, 70%);
+  color: hsl(0, 6%, 24%);
   font-size: 0.875rem;
   margin-top: auto;
   padding-bottom: 1rem;

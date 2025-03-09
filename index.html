@@ -11,47 +11,49 @@
   <body>
     <main class="coming-soon">
       <img src="assets/images/logo.svg" alt="Base Apparel logo" class="coming-soon__logo" />
-      <header class="coming-soon__header">
-        <picture class="coming-soon__hero">
-          <source media="(min-width: 768px)" srcset="assets/images/hero-desktop.jpg" />
-          <img
-            src="assets/images/hero-mobile.jpg"
-            alt="Base Apparel hero image"
-            class="coming-soon__hero-img"
-          />
-        </picture>
-      </header>
-
-      <div class="coming-soon__content">
-        <div class="coming-soon__text">
-          <h1 class="coming-soon__title">
-            <span class="coming-soon__title-highlight">We're</span> coming soon
-          </h1>
-
-          <p class="coming-soon__description">
-            Hello fellow shoppers! We're currently building our new fashion store. Add your email
-            below to stay up-to-date with announcements and our launch deals.
-          </p>
-        </div>
-
-        <form class="email-form">
-          <div class="email-form__group">
-            <input
-              type="email"
-              class="email-form__input"
-              placeholder="Email Address"
-              required
-              aria-label="Email Address"
+      <div class="coming-soon__wrapper">
+        <header class="coming-soon__header">
+          <picture class="coming-soon__hero">
+            <source media="(min-width: 768px)" srcset="assets/images/hero-desktop.jpg" />
+            <img
+              src="assets/images/hero-mobile.jpg"
+              alt="Base Apparel hero image"
+              class="coming-soon__hero-img"
             />
-            <button type="submit" class="email-form__button">
-              <img
-                src="assets/images/icon-arrow.svg"
-                alt="Submit"
-                class="email-form__button-icon"
-              />
-            </button>
+          </picture>
+        </header>
+
+        <div class="coming-soon__content">
+          <div class="coming-soon__text">
+            <h1 class="coming-soon__title">
+              <span class="coming-soon__title-highlight">We're</span> coming soon
+            </h1>
+
+            <p class="coming-soon__description">
+              Hello fellow shoppers! We're currently building our new fashion store. Add your email
+              below to stay up-to-date with announcements and our launch deals.
+            </p>
           </div>
-        </form>
+
+          <form class="email-form">
+            <div class="email-form__group">
+              <input
+                type="email"
+                class="email-form__input"
+                placeholder="Email Address"
+                required
+                aria-label="Email Address"
+              />
+              <button type="submit" class="email-form__button">
+                <img
+                  src="assets/images/icon-arrow.svg"
+                  alt="Submit"
+                  class="email-form__button-icon"
+                />
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
 

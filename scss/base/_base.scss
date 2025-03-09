@@ -6,7 +6,6 @@ body {
 
 body {
   align-items: center;
-  // background-color: $light-grayish-blue;
   @include flex-column();
   font-family: $font-name;
   min-height: 100dvh;
@@ -15,18 +14,20 @@ body {
 }
 
 .coming-soon {
-  @include flex-column($space-64);
+  @include flex-column(0);
   flex: 1 1 auto;
   min-height: 100%;
-  padding: $space-32;
+  padding-top: $space-32;
+  position: relative;
 
   @include respond-to($breakpoint-desktop) {
     align-items: center;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 0;
     max-width: 90rem;
-    padding: 0;
+    padding-top: 0;
+    padding-left: $space-64;
   }
 }

@@ -3,28 +3,18 @@
     @include flex-column($space-32);
 
     @include respond-to($breakpoint-desktop) {
-      grid-column: 2 / 3;
-      position: relative;
-    }
-  }
-
-  &__logo {
-    display: block;
-    object-fit: cover;
-    width: 6.25rem;
-
-    @include respond-to($breakpoint-desktop) {
-      position: absolute;
+      display: block;
     }
   }
 
   &__hero {
-    width: 100vw; /* Full viewport width */
-    margin-left: calc(-50vw + 50%); /* Center the image */
-
+    width: 100%;
+    height: auto;
+    margin: 0;
     @include respond-to($breakpoint-desktop) {
-      width: auto;
-      margin-left: 0;
+      width: 50%;
+      height: auto;
+      margin: 0;
     }
   }
 

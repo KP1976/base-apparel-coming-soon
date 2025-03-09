@@ -1,6 +1,26 @@
 .coming-soon {
+  &__logo {
+    display: block;
+    margin-left: $space-32;
+    object-fit: cover;
+    width: 6.25rem;
+
+    @include respond-to($breakpoint-desktop) {
+      left: $space-64;
+      position: absolute;
+      top: $space-64;
+      width: 9.875rem;
+    }
+  }
+
+  &__wrapper {
+    @include flex-column($space-64);
+    padding-top: $space-32;
+  }
+
   &__content {
     @include flex-column($space-32);
+    padding: 0 $space-32;
 
     @include respond-to($breakpoint-desktop) {
       grid-column: 1 / 2;
@@ -20,6 +40,14 @@
     line-height: $line-height-105;
     text-align: center;
     text-transform: uppercase;
+
+    @include respond-to($breakpoint-desktop) {
+      font-size: $font-size-62;
+      grid-column: 1 / 2;
+      grid-row: 1 /1;
+      letter-spacing: $letter-spacing--19;
+      line-height: $line-height-112;
+    }
   }
 
   &__title-highlight {
