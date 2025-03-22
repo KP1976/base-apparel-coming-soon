@@ -6,7 +6,8 @@
     width: 6.25rem;
 
     @include respond-to($breakpoint-desktop) {
-      left: $space-64;
+      left: $space-164;
+      margin: 0;
       position: absolute;
       top: $space-64;
       width: 9.875rem;
@@ -16,6 +17,16 @@
   &__wrapper {
     @include flex-column($space-64);
     padding-top: $space-32;
+
+    @include respond-to($breakpoint-desktop) {
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 0;
+      max-width: 90rem;
+      padding-top: 0;
+    }
   }
 
   &__content {
@@ -23,13 +34,28 @@
     padding: 0 $space-32;
 
     @include respond-to($breakpoint-desktop) {
+      justify-content: center;
       grid-column: 1 / 2;
       grid-row: 1 /1;
+      height: 100%;
+      // max-width: 27.875rem;
+      padding: 0 220px 0 $space-164;
     }
+  }
+
+  &__content--bg {
+    background-image: url("../assets/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
   }
 
   &__text {
     @include flex-column($space-16);
+
+    @include respond-to($breakpoint-desktop) {
+      align-items: center;
+    }
   }
 
   &__title {
@@ -47,6 +73,7 @@
       grid-row: 1 /1;
       letter-spacing: $letter-spacing--19;
       line-height: $line-height-112;
+      text-align: left;
     }
   }
 
@@ -61,6 +88,10 @@
     font-weight: $font-weight-semibold;
     line-height: $line-height-155;
     text-align: center;
+
+    @include respond-to($breakpoint-desktop) {
+      text-align: left;
+    }
   }
 }
 

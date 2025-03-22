@@ -22,12 +22,7 @@ body {
 
   @include respond-to($breakpoint-desktop) {
     align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 0;
-    max-width: 90rem;
+    flex-direction: row;
     padding-top: 0;
-    padding-left: $space-64;
   }
 }

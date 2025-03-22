@@ -25,6 +25,10 @@
       color: $color-primary-desaturated-red-50;
       font-size: $font-size-14;
     }
+
+    @include respond-to($breakpoint-desktop) {
+      height: 3.5rem;
+    }
   }
 
   &__button {
@@ -40,6 +44,11 @@
     position: absolute;
     right: 0;
     width: 4rem;
+
+    @include respond-to($breakpoint-desktop) {
+      width: 6.25rem;
+      height: 100%;
+    }
   }
 
   &__button-icon {
