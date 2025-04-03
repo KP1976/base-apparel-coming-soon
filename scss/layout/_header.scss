@@ -8,19 +8,18 @@
   }
 
   &__hero {
-    width: 100%;
-    height: auto;
+    display: block;
     margin: 0;
+    width: 100%;
+
     @include respond-to($breakpoint-desktop) {
-      width: 50%;
-      height: auto;
       margin: 0;
+      // width: 50%;
     }
   }
 
   &__hero-img {
-    width: 100%;
-    height: auto;
     display: block;
+    width: 100%;
   }
 }

@@ -280,21 +280,18 @@ body {
   }
 }
 .coming-soon__hero {
-  width: 100%;
-  height: auto;
+  display: block;
   margin: 0;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .coming-soon__hero {
-    width: 50%;
-    height: auto;
     margin: 0;
   }
 }
 .coming-soon__hero-img {
-  width: 100%;
-  height: auto;
   display: block;
+  width: 100%;
 }
 
 .coming-soon__logo {
@@ -342,7 +339,6 @@ body {
     grid-column: 1/2;
     grid-row: 1/1;
     height: 100%;
-    padding: 0 220px 0 10.25rem;
   }
 }
 @media (min-width: 768px) {
