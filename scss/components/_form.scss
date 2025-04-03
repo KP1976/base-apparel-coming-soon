@@ -4,7 +4,7 @@
     justify-content: space-between;
     position: relative;
 
-    @include respond-to($breakpoint-desktop) {
+    @include respond-to($breakpoint-small-desktop) {
       flex-direction: row;
     }
   }
@@ -34,7 +34,7 @@
       display: block;
     }
 
-    @include respond-to($breakpoint-desktop) {
+    @include respond-to($breakpoint-small-desktop) {
       height: 3.5rem;
     }
   }
@@ -70,7 +70,7 @@
     right: 0;
     width: 4rem;
 
-    @include respond-to($breakpoint-desktop) {
+    @include respond-to($breakpoint-small-desktop) {
       width: 6.25rem;
       height: 100%;
     }

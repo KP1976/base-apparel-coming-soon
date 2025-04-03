@@ -5,12 +5,16 @@
     object-fit: cover;
     width: 6.25rem;
 
-    @include respond-to($breakpoint-desktop) {
-      left: $space-164;
+    @include respond-to($breakpoint-small-desktop) {
+      left: 2rem;
       margin: 0;
       position: absolute;
       top: $space-64;
       width: 9.875rem;
+    }
+
+    @include respond-to($breakpoint-desktop) {
+      left: $space-164;
     }
   }
 
@@ -18,7 +22,7 @@
     @include flex-column($space-64);
     padding-top: $space-32;
 
-    @include respond-to($breakpoint-desktop) {
+    @include respond-to($breakpoint-small-desktop) {
       align-items: center;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -33,18 +37,21 @@
     @include flex-column($space-32);
     padding: 0 $space-32;
 
-    @include respond-to($breakpoint-desktop) {
+    @include respond-to($breakpoint-small-desktop) {
       justify-content: center;
       grid-column: 1 / 2;
       grid-row: 1 /1;
       height: 100%;
       // max-width: 27.875rem;
-      // padding: 0 220px 0 $space-164;
+    }
+
+    @include respond-to($breakpoint-desktop) {
+      padding: 0 220px 0 $space-164;
     }
   }
 
   &__content--bg {
-    @include respond-to($breakpoint-desktop) {
+    @include respond-to($breakpoint-small-desktop) {
       background-image: url("../assets/images/bg-pattern-desktop.svg");
       background-repeat: no-repeat;
       background-position: top;
@@ -55,7 +62,7 @@
   &__text {
     @include flex-column($space-16);
 
-    @include respond-to($breakpoint-desktop) {
+    @include respond-to($breakpoint-small-desktop) {
       align-items: center;
     }
   }
@@ -69,7 +76,7 @@
     text-align: center;
     text-transform: uppercase;
 
-    @include respond-to($breakpoint-desktop) {
+    @include respond-to($breakpoint-small-desktop) {
       font-size: $font-size-62;
       grid-column: 1 / 2;
       grid-row: 1 /1;
@@ -91,7 +98,7 @@
     line-height: $line-height-155;
     text-align: center;
 
-    @include respond-to($breakpoint-desktop) {
+    @include respond-to($breakpoint-small-desktop) {
       text-align: left;
     }
   }

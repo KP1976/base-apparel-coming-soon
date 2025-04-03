@@ -2,7 +2,7 @@
   &__header {
     @include flex-column($space-32);
 
-    @include respond-to($breakpoint-desktop) {
+    @include respond-to($breakpoint-small-desktop) {
       display: block;
     }
   }
@@ -12,7 +12,7 @@
     margin: 0;
     width: 100%;
 
-    @include respond-to($breakpoint-desktop) {
+    @include respond-to($breakpoint-small-desktop) {
       margin: 0;
       // width: 50%;
     }

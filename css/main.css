@@ -303,11 +303,16 @@ body {
 }
 @media (min-width: 768px) {
   .coming-soon__logo {
-    left: 10.25rem;
+    left: 2rem;
     margin: 0;
     position: absolute;
     top: 4rem;
     width: 9.875rem;
+  }
+}
+@media (min-width: 1200px) {
+  .coming-soon__logo {
+    left: 10.25rem;
   }
 }
 .coming-soon__wrapper {
@@ -339,6 +344,11 @@ body {
     grid-column: 1/2;
     grid-row: 1/1;
     height: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .coming-soon__content {
+    padding: 0 220px 0 10.25rem;
   }
 }
 @media (min-width: 768px) {
