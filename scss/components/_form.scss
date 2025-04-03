@@ -26,9 +26,34 @@
       font-size: $font-size-14;
     }
 
+    &.invalid {
+      border: 2px solid red;
+    }
+
+    &.invalid + #error-icon {
+      display: block;
+    }
+
     @include respond-to($breakpoint-desktop) {
       height: 3.5rem;
     }
+  }
+
+  &__error-icon {
+    position: absolute;
+    top: calc(50% - 0.75rem);
+    right: 7rem;
+    display: none; /* Ukryj domyślnie */
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__error-message {
+    color: red;
+    font-size: 0.8rem;
+    display: none; /* Ukryj domyślnie */
+    margin-top: 0.75rem;
+    padding-left: 1.5rem;
   }
 
   &__button {

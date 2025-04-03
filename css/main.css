@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
@@ -175,6 +176,18 @@ body {
   }
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
 .email-form__group {
   display: flex;
   justify-content: space-between;
@@ -205,10 +218,31 @@ body {
   color: hsla(0, 36%, 70%, 0.5);
   font-size: 0.875rem;
 }
+.email-form__input.invalid {
+  border: 2px solid red;
+}
+.email-form__input.invalid + #error-icon {
+  display: block;
+}
 @media (min-width: 768px) {
   .email-form__input {
     height: 3.5rem;
   }
+}
+.email-form__error-icon {
+  position: absolute;
+  top: calc(50% - 0.75rem);
+  right: 7rem;
+  display: none; /* Ukryj domyślnie */
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.email-form__error-message {
+  color: red;
+  font-size: 0.8rem;
+  display: none; /* Ukryj domyślnie */
+  margin-top: 0.75rem;
+  padding-left: 1.5rem;
 }
 .email-form__button {
   align-items: center;
@@ -311,11 +345,13 @@ body {
     padding: 0 220px 0 10.25rem;
   }
 }
-.coming-soon__content--bg {
-  background-image: url("../assets/images/bg-pattern-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
+@media (min-width: 768px) {
+  .coming-soon__content--bg {
+    background-image: url("../assets/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
 }
 .coming-soon__text {
   display: flex;
@@ -393,10 +429,31 @@ body {
   color: hsla(0, 36%, 70%, 0.5);
   font-size: 0.875rem;
 }
+.email-form__input.invalid {
+  border: 2px solid red;
+}
+.email-form__input.invalid + #error-icon {
+  display: block;
+}
 @media (min-width: 768px) {
   .email-form__input {
     height: 3.5rem;
   }
+}
+.email-form__error-icon {
+  position: absolute;
+  top: calc(50% - 0.75rem);
+  right: 7rem;
+  display: none; /* Ukryj domyślnie */
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.email-form__error-message {
+  color: red;
+  font-size: 0.8rem;
+  display: none; /* Ukryj domyślnie */
+  margin-top: 0.75rem;
+  padding-left: 1.5rem;
 }
 .email-form__button {
   align-items: center;
